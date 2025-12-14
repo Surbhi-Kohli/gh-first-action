@@ -1,0 +1,10 @@
+name: First Workflow
+on: workflow_dispatch #event = manually trigger workflow.'on' tells when should this wf should run. github actions has many other events
+jobs: 
+  first-job:  # custom job name, we  named ours as first-job
+    runs-on: ubuntu-latest # runner or environment , this is reserved key
+    steps: # reserved word
+      - name: Print greeting
+        run: echo "Hello World !"
+      - name: Print goodbye
+        run: echo "Done - bye!!"
